@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saúde & Bem-Estar — Mussilipo</title>
+  <meta name="description" content="Dicas reais e práticas de saúde, exercícios, alimentação e produtos recomendados — conteúdo organizado e confiável. Direitos reservados a Mussilipo." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{
+      --bg:#f9fbff; --card:#ffffff; --accent1:#ff7aa2; --accent2:#6ec6ff; --text:#0f1724; --muted:#536172;
+      --green:#3ad29f; --yellow:#ffd166;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg),#ffffff); color:var(--text); -webkit-font-smoothing:antialiased}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:32px}
+    .hero-card{background:var(--card);padding:28px;border-radius:16px;box-shadow:0 6px 30px rgba(24,39,75,0.06)}
+    h1{font-size:32px;margin:0 0 8px}
+    p.lead{margin:0 0 16px;color:var(--muted);line-height:1.5}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;font-weight:700;text-decoration:none}
+    .btn-wpp{background:linear-gradient(90deg,var(--green),#18b286);color:white}
+    .btn-mais{background:linear-gradient(90deg,var(--accent2),var(--accent1));color:white}
+
+    .features{display:flex;gap:12px;margin-top:18px}
+    .feature{flex:1;padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(250,250,255,0.6));border:1px solid rgba(15,23,36,0.04)}
+
+    section{margin-top:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(24,39,75,0.04);}
+    .card h3{margin:0 0 8px}
+    .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+
+    footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+
+    /* Floating WhatsApp */
+    .wpp-float{position:fixed;right:20px;bottom:20px;z-index:999}
+    .wpp-float a{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:999px;background:linear-gradient(135deg,var(--green),#14a67b);color:white;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,0.12);font-weight:800}
+
+    /* Responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:1fr 1fr}.product-grid{grid-template-columns:1fr 1fr}.container{padding:18px}}
+    @media (max-width:560px){.grid{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr}}
+
+    /* Small helpers */
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;font-weight:700;background:linear-gradient(90deg,var(--yellow),#ffd59a);}
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <div style="font-weight:800">Mussilipo</div>
+          <div class="muted" style="font-size:13px">Saúde • Bem‑Estar • Vida</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#exercicios">Exercícios</a>
+        <a href="#alimentacao">Alimentação</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-card">
+        <span class="tag">Conteúdo real e prático</span>
+        <h1>Viva melhor: saúde e bem‑estar para o seu dia a dia</h1>
+        <p class="lead">Dicas práticas de exercício, alimentação equilibrada e produtos recomendados — organizadas e explicadas com clareza para que você implemente mudanças reais hoje.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-wpp" href="https://wa.me/258871828517?text=Olá%20Mussilipo%2C%20quero%20saber%20mais%20sobre%20saúde%20e%20bem‑estar" target="_blank" rel="noopener">📩 Falar no WhatsApp</a>
+          <a class="btn btn-mais" href="#produtos">🛒 Ver produtos recomendados</a>
+        </div>
+
+        <div class="features" style="margin-top:18px">
+          <div class="feature">
+            <strong>Exercícios fáceis</strong>
+            <div class="muted" style="font-size:13px">Rotinas curtas para quem tem pouco tempo.</div>
+          </div>
+          <div class="feature">
+            <strong>Alimentação equilibrada</strong>
+            <div class="muted" style="font-size:13px">Receitas e planos simples, sem dietas radicais.</div>
+          </div>
+          <div class="feature">
+            <strong>Produtos testados</strong>
+            <div class="muted" style="font-size:13px">Sugestões honestas para o dia a dia.</div>
+          </div>
+        </div>
+      </div>
+
+      <aside style="padding:18px;border-radius:16px;background:linear-gradient(180deg,var(--accent2),white);height:100%">
+        <h3 style="margin-top:0">Plano rápido — 7 dias</h3>
+        <ol style="padding-left:18px;color:var(--muted)">
+          <li>3x semana: 20–30 min de exercício intervalado.</li>
+          <li>Diariamente: 2 porções de fruta + 2 de legumes.</li>
+          <li>Hidratação: 30–35 ml/kg corpo por dia.</li>
+          <li>Sono: 7–8 horas com rotina regular.</li>
+        </ol>
+        <div style="margin-top:14px">
+          <a class="btn btn-wpp" href="https://wa.me/258871828517?text=Quero%20o%20plano%20de%207%20dias" target="_blank">📲 Quero o plano completo</a>
+        </div>
+      </aside>
+    </main>
+
+    <section id="exercicios">
+      <h2>Exercícios — simples, eficazes e adaptáveis</h2>
+      <p class="muted">Sem equipamento? Sem problema. Aqui tens opções para iniciantes e também variações para quem já treina.</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Treino em casa (20 min)</h3>
+          <p class="muted">Aquecimento 3 min → 4 blocos de 4 min (30s trabalho / 30s descanso) → alongamento 3 min.</p>
+          <ul class="muted" style="padding-left:18px">
+            <li>Agachamentos, Flexões (variações), Prancha, Saltos baixos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Força e mobilidade</h3>
+          <p class="muted">3x por semana: exercícios com o peso do corpo + alongamentos ativos.</p>
+        </div>
+        <div class="card">
+          <h3>Dicas de progresso</h3>
+          <p class="muted">Aumenta reps ou reduz descanso gradualmente. Mantém técnica e respiração controlada.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="alimentacao">
+      <h2>Alimentação — prática e equilibrada</h2>
+      <p class="muted">Sem modismos: alimentos integrais, proteína magra, gorduras saudáveis e fibras. Exemplo de um dia equilibrado:</p>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Pequeno-almoço</h3>
+          <p class="muted">Aveia com fruta, iogurte natural e uma colher de sementes (linhaça ou chia).</p>
+        </div>
+        <div class="card">
+          <h3>Almoço</h3>
+          <p class="muted">Salada colorida + cereal integral (arroz/quinua) + proteína (peixe, frango ou leguminosas).</p>
+        </div>
+        <div class="card">
+          <h3>Jantar</h3>
+          <p class="muted">Porção moderada de proteína + legumes cozidos ou grelhados + pequena fonte de carboidrato.</p>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">Observação: estas são recomendações gerais. Para condições médicas específicas, consulta um profissional de saúde.</p>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos recomendados</h2>
+      <p class="muted">Seleção honesta de itens úteis para suporte ao bem-estar (links para compra e contacto direto).</p>
+
+      <div class="product-grid" style="margin-top:12px">
+        <div class="card">
+          <h3>Tapete de yoga antideslizante</h3>
+          <p class="muted">Espessura confortável para exercícios e alongamentos.</p>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn btn-mais" href="https://wa.me/258871828517?text=Quero%20comprar%20tapete%20de%20yoga" target="_blank">Comprar / Info</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Garrafa térmica para água</h3>
+          <p class="muted">Ajuda a manter a hidratação diária de forma prática.</p>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn btn-mais" href="https://wa.me/258871828517?text=Quero%20a%20garrafa%20térmica" target="_blank">Comprar / Info</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Bandas de resistência</h3>
+          <p class="muted">Versáteis para treino de força em casa e fáceis de guardar.</p>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="btn btn-mais" href="https://wa.me/258871828517?text=Quero%20bandas%20de%20resistência" target="_blank">Comprar / Info</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contato">
+      <h2>Fala connosco</h2>
+      <p class="muted">Tens dúvidas ou queres um plano personalizado? Envia mensagem e respondemos com orientações práticas.</p>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-wpp" href="https://wa.me/258871828517?text=Olá%20Mussilipo%2C%20gostaria%20de%20um%20plano%20personalizado" target="_blank">📲 WhatsApp</a>
+        <a class="btn" style="background:transparent;border:2px dashed var(--accent1);color:var(--accent1);font-weight:800;text-decoration:none" href="#">✉️ Inscrever newsletter</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <strong>Mussilipo</strong> — Todos os direitos reservados.</div>
+      <div style="margin-top:6px;color:var(--muted);font-size:13px">Aviso: o conteúdo neste site é informativo e não substitui consulta médica profissional.</div>
+    </footer>
+  </div>
+
+  <div class="wpp-float">
+    <a href="https://wa.me/258871828517?text=Olá%20Mussilipo%2C%20tenho%20uma%20pergunta" target="_blank" aria-label="Contactar por WhatsApp">💬</a>
+  </div>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        const id=this.getAttribute('href').substring(1);
+        const el=document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
