@@ -1,220 +1,209 @@
 <!doctype html>
-<html lang="pt-PT">
+<html lang="pt-MZ">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Saúde & Bem-Estar — Mussilipo</title>
-  <meta name="description" content="Dicas reais e práticas de saúde, exercícios, alimentação e produtos recomendados — conteúdo organizado e confiável. Direitos reservados a Mussilipo." />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <title>Mussilipo Investimento — Catálogos & Encomendas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#f9fbff; --card:#ffffff; --accent1:#ff7aa2; --accent2:#6ec6ff; --text:#0f1724; --muted:#536172;
-      --green:#3ad29f; --yellow:#ffd166;
+      --bg:#12021a; /* dark purple */
+      --card:#1a0b2a;
+      --accent:#7b2cff; /* bright purple */
+      --muted:#cfc6e6;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
     }
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,var(--bg),#ffffff); color:var(--text); -webkit-font-smoothing:antialiased}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
-
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
-    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
-
-    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:32px}
-    .hero-card{background:var(--card);padding:28px;border-radius:16px;box-shadow:0 6px 30px rgba(24,39,75,0.06)}
-    h1{font-size:32px;margin:0 0 8px}
-    p.lead{margin:0 0 16px;color:var(--muted);line-height:1.5}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;font-weight:700;text-decoration:none}
-    .btn-wpp{background:linear-gradient(90deg,var(--green),#18b286);color:white}
-    .btn-mais{background:linear-gradient(90deg,var(--accent2),var(--accent1));color:white}
-
-    .features{display:flex;gap:12px;margin-top:18px}
-    .feature{flex:1;padding:14px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(250,250,255,0.6));border:1px solid rgba(15,23,36,0.04)}
-
-    section{margin-top:28px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(24,39,75,0.04);}
-    .card h3{margin:0 0 8px}
-    .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-
-    footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
-
-    /* Floating WhatsApp */
-    .wpp-float{position:fixed;right:20px;bottom:20px;z-index:999}
-    .wpp-float a{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:999px;background:linear-gradient(135deg,var(--green),#14a67b);color:white;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,0.12);font-weight:800}
-
-    /* Responsive */
-    @media (max-width:980px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:1fr 1fr}.product-grid{grid-template-columns:1fr 1fr}.container{padding:18px}}
-    @media (max-width:560px){.grid{grid-template-columns:1fr}.product-grid{grid-template-columns:1fr}}
-
-    /* Small helpers */
-    .tag{display:inline-block;padding:6px 10px;border-radius:999px;font-weight:700;background:linear-gradient(90deg,var(--yellow),#ffd59a);}
-    .muted{color:var(--muted)}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #0f0220 100%);color:var(--muted)}
+    .container{max-width:var(--maxw);margin:40px auto;padding:28px}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{background:linear-gradient(135deg,var(--accent),#5e33ff);padding:12px;border-radius:10px;color:white;font-weight:800;font-size:18px}
+    h1{font-size:28px;margin:0}
+    p.lead{color:#e9e1ff;margin-top:6px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:20px}
+    .card{background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.02));border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .feature{background:var(--glass);padding:12px;border-radius:10px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{background:var(--accent);border:none;color:white;padding:12px 16px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+    .right-card{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+    .sec{margin-top:22px}
+    .grid-sections{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
+    .section-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px}
+    .section-card h3{margin:0 0 8px 0}
+    .section-card p{margin:0 0 12px 0;color:#e6ddff}
+    footer{margin-top:30px;padding:12px;text-align:center;color:#cfc6e6;opacity:0.9}
+    .whats-float{position:fixed;right:18px;bottom:18px;z-index:999}
+    .whats-btn{width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(123,44,255,0.3);background:linear-gradient(135deg,#25D366,#128C7E);border:4px solid rgba(255,255,255,0.06)}
+    .whats-btn img{width:36px;height:36px}
+    .section-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .small{font-size:13px;padding:8px 10px}
+    .pill{display:inline-block;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:999px;color:#f3eefe;font-weight:600}
+    .payment{background:linear-gradient(90deg, rgba(123,44,255,0.12), rgba(255,255,255,0.02));padding:12px;border-radius:10px;margin-top:12px}
+    .owners{font-size:13px;opacity:0.9}
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .grid-sections{grid-template-columns:1fr}
+      .right-card{order:-1}
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="brand">
-        <div class="logo">M</div>
-        <div>
-          <div style="font-weight:800">Mussilipo</div>
-          <div class="muted" style="font-size:13px">Saúde • Bem‑Estar • Vida</div>
-        </div>
+      <div class="logo">MUSSILIPO INVESTIMENTO</div>
+      <div>
+        <h1>Catálogos & Encomendas — Acessórios, Tecnologia, Moda, Beleza e mais</h1>
+        <p class="lead">📦 Importamos o que quiseres • Entregas seguras • Pagamento fácil — E-mola: <strong>862583032</strong></p>
       </div>
-      <nav>
-        <a href="#exercicios">Exercícios</a>
-        <a href="#alimentacao">Alimentação</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contato">Contato</a>
-      </nav>
     </header>
 
-    <main class="hero">
-      <div class="hero-card">
-        <span class="tag">Conteúdo real e prático</span>
-        <h1>Viva melhor: saúde e bem‑estar para o seu dia a dia</h1>
-        <p class="lead">Dicas práticas de exercício, alimentação equilibrada e produtos recomendados — organizadas e explicadas com clareza para que você implemente mudanças reais hoje.</p>
+    <div class="hero">
+      <div class="card">
+        <h2>🎯 Atenção — Tens tudo num só lugar</h2>
+        <p>Somos a tua porta de entrada para produtos importados: acessórios & tecnologias, moda, saúde & beleza, desporto e muito mais. Pedidos por encomenda com fornecedores verificados e entrega rastreada.</p>
 
-        <div class="cta-row">
-          <a class="btn btn-wpp" href="https://wa.me/258871828517?text=Olá%20Mussilipo%2C%20quero%20saber%20mais%20sobre%20saúde%20e%20bem‑estar" target="_blank" rel="noopener">📩 Falar no WhatsApp</a>
-          <a class="btn btn-mais" href="#produtos">🛒 Ver produtos recomendados</a>
+        <div class="features">
+          <div class="feature"><strong>🚀 Rápido</strong><div class="small">Processamento ágil e comunicação direta via WhatsApp</div></div>
+          <div class="feature"><strong>🔒 Seguro</strong><div class="small">Produtos verificados antes do envio</div></div>
+          <div class="feature"><strong>💸 Pagamento</strong><div class="small">E-mola disponível: <strong>862583032</strong></div></div>
+          <div class="feature"><strong>📦 Variedade</strong><div class="small">Importamos quase tudo por encomenda</div></div>
         </div>
 
-        <div class="features" style="margin-top:18px">
-          <div class="feature">
-            <strong>Exercícios fáceis</strong>
-            <div class="muted" style="font-size:13px">Rotinas curtas para quem tem pouco tempo.</div>
-          </div>
-          <div class="feature">
-            <strong>Alimentação equilibrada</strong>
-            <div class="muted" style="font-size:13px">Receitas e planos simples, sem dietas radicais.</div>
-          </div>
-          <div class="feature">
-            <strong>Produtos testados</strong>
-            <div class="muted" style="font-size:13px">Sugestões honestas para o dia a dia.</div>
-          </div>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%2C+quero+fazer+um+pedido+de+importa%C3%A7%C3%A3o">💬 Falar pelo WhatsApp</a>
+          <a class="btn ghost" href="#catalogos">Ver Catálogos</a>
         </div>
+
+        <div class="payment">
+          <strong>💳 Método de Pagamento</strong>
+          <p style="margin:8px 0 0 0">E-mola: <strong>862583032</strong> — Titular: <strong>Alcido Armando Daniel Mussilipo</strong></p>
+        </div>
+
       </div>
 
-      <aside style="padding:18px;border-radius:16px;background:linear-gradient(180deg,var(--accent2),white);height:100%">
-        <h3 style="margin-top:0">Plano rápido — 7 dias</h3>
-        <ol style="padding-left:18px;color:var(--muted)">
-          <li>3x semana: 20–30 min de exercício intervalado.</li>
-          <li>Diariamente: 2 porções de fruta + 2 de legumes.</li>
-          <li>Hidratação: 30–35 ml/kg corpo por dia.</li>
-          <li>Sono: 7–8 horas com rotina regular.</li>
-        </ol>
-        <div style="margin-top:14px">
-          <a class="btn btn-wpp" href="https://wa.me/258871828517?text=Quero%20o%20plano%20de%207%20dias" target="_blank">📲 Quero o plano completo</a>
+      <aside class="right-card">
+        <div class="card">
+          <h3>📣 Oferta</h3>
+          <p style="margin:6px 0">Reservas com entrada — Descontos para compras por atacado. Envia o link do produto e recebes orçamento em 24h.</p>
+          <div class="section-actions">
+            <a class="btn small" href="https://wa.me/258862583032?text=Quero+or%C3%A7amento+para+importa%C3%A7%C3%A3o">Pedir Orçamento</a>
+            <a class="btn small ghost" href="#metodo">Como Pagar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>📞 Contactos</h3>
+          <p class="small">WhatsApp: +258 86 258 3032<br/>Titular E-mola: Alcido Armando Daniel Mussilipo</p>
+          <a class="btn small" href="https://wa.me/258862583032?text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es">Falar agora</a>
         </div>
       </aside>
+    </div>
+
+    <main id="catalogos">
+      <section class="sec">
+        <h2>📚 Catálogos Disponíveis</h2>
+        <p class="small">Escolhe a categoria e manda o produto que queres — trazemos por encomenda.</p>
+
+        <div class="grid-sections">
+          <div class="section-card">
+            <h3>🔌 Acessórios & Tecnologia</h3>
+            <p>Capas, cabos, fones, powerbanks, smartwatches, mini projetores e gadgets modernos. Produtos testados e garantidos.</p>
+            <p><strong>AIDA:</strong></p>
+            <ul>
+              <li><strong>Atenção:</strong> Últimos gadgets e acessórios em promoção 🎧</li>
+              <li><strong>Interesse:</strong> Produtos testados e fornecedores verificados.</li>
+              <li><strong>Desejo:</strong> Modelos originais e alternativas económico/premium.</li>
+              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+um+acess%C3%B3rio+%26+tecnologia">Pedir Orçamento</a></li>
+            </ul>
+          </div>
+
+          <div class="section-card">
+            <h3>👗 Moda & Vestuário</h3>
+            <p>Roupas, ténis, acessórios e uniformes. Peças importadas por encomenda — tamanhos disponíveis sob consulta.</p>
+            <p><strong>AIDA:</strong></p>
+            <ul>
+              <li><strong>Atenção:</strong> Peças únicas e tendências internacionais ✨</li>
+              <li><strong>Interesse:</strong> Fotos reais e descrição completa.</li>
+              <li><strong>Desejo:</strong> Opções premium e económicas.</li>
+              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+roupa+por+encomenda">Solicitar Produto</a></li>
+            </ul>
+          </div>
+
+          <div class="section-card">
+            <h3>💄 Saúde, Beleza & Cosmética</h3>
+            <p>Séruns, maquilhagem, shampoos, perfumes e suplementos. Trabalhamos com marcas de confiança.</p>
+            <p><strong>AIDA:</strong></p>
+            <ul>
+              <li><strong>Atenção:</strong> Produtos originais e lacrados 💎</li>
+              <li><strong>Interesse:</strong> Ingredientes & benefícios detalhados.</li>
+              <li><strong>Desejo:</strong> Kits e descontos para clientes regulares.</li>
+              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+cosm%C3%A9ticos">Pedir Agora</a></li>
+            </ul>
+          </div>
+
+          <div class="section-card">
+            <h3>🏅 Desporto</h3>
+            <p>Chuteiras, bolas, equipamento de ginásio e acessórios para treino — ideal para clubes e academias.</p>
+            <p><strong>AIDA:</strong></p>
+            <ul>
+              <li><strong>Atenção:</strong> Equipamentos profissionais e amadores ⚽</li>
+              <li><strong>Interesse:</strong> Tamanhos e specs técnicos disponíveis.</li>
+              <li><strong>Desejo:</strong> Preços competitivos para compras em atacado.</li>
+              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+material+de+desporto">Pedir Cotação</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="card">
+          <h3 id="metodo">💳 Método de Pagamento & Segurança</h3>
+          <p>Nós aceitamos pagamentos via <strong>E-mola</strong>. Para efetuar o pagamento, usa os dados abaixo:</p>
+          <p class="small"><strong>E-mola:</strong> <strong>862583032</strong><br/>Titular: <strong>Alcido Armando Daniel Mussilipo</strong></p>
+          <p style="margin-top:8px">Depois do pagamento, envia o comprovante no WhatsApp. Reservas com entrada são aceites para garantir stock e acelerar a importação.</p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="card">
+          <h3>🧭 Como Pedir (passo a passo)</h3>
+          <ol>
+            <li>Envia foto ou link do produto pelo WhatsApp.</li>
+            <li>Indica modelo, cor, tamanho e quantidade.</li>
+            <li>Recebe o orçamento final com prazo de entrega.</li>
+            <li>Confirma com entrada (se aplicável) e envia comprovante.</li>
+            <li>Recebe rastreamento e entrega local.</li>
+          </ol>
+          <p class="small">Dúvidas? Clica em <a class="pill" href="https://wa.me/258862583032?text=Tenho+uma+duvida+sobre+o+processo">Falar com Suporte</a></p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="card">
+          <h3>⚖ Direito e Propriedade</h3>
+          <p class="owners">Todos os conteúdos e catálogos aqui apresentados estão sob o direito de <strong>Mussilipo Investimento</strong>. Qualquer reprodução ou uso comercial sem autorização é proibido.</p>
+        </div>
+      </section>
+
     </main>
 
-    <section id="exercicios">
-      <h2>Exercícios — simples, eficazes e adaptáveis</h2>
-      <p class="muted">Sem equipamento? Sem problema. Aqui tens opções para iniciantes e também variações para quem já treina.</p>
-      <div class="grid" style="margin-top:12px">
-        <div class="card">
-          <h3>Treino em casa (20 min)</h3>
-          <p class="muted">Aquecimento 3 min → 4 blocos de 4 min (30s trabalho / 30s descanso) → alongamento 3 min.</p>
-          <ul class="muted" style="padding-left:18px">
-            <li>Agachamentos, Flexões (variações), Prancha, Saltos baixos.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Força e mobilidade</h3>
-          <p class="muted">3x por semana: exercícios com o peso do corpo + alongamentos ativos.</p>
-        </div>
-        <div class="card">
-          <h3>Dicas de progresso</h3>
-          <p class="muted">Aumenta reps ou reduz descanso gradualmente. Mantém técnica e respiração controlada.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="alimentacao">
-      <h2>Alimentação — prática e equilibrada</h2>
-      <p class="muted">Sem modismos: alimentos integrais, proteína magra, gorduras saudáveis e fibras. Exemplo de um dia equilibrado:</p>
-      <div class="grid" style="margin-top:12px">
-        <div class="card">
-          <h3>Pequeno-almoço</h3>
-          <p class="muted">Aveia com fruta, iogurte natural e uma colher de sementes (linhaça ou chia).</p>
-        </div>
-        <div class="card">
-          <h3>Almoço</h3>
-          <p class="muted">Salada colorida + cereal integral (arroz/quinua) + proteína (peixe, frango ou leguminosas).</p>
-        </div>
-        <div class="card">
-          <h3>Jantar</h3>
-          <p class="muted">Porção moderada de proteína + legumes cozidos ou grelhados + pequena fonte de carboidrato.</p>
-        </div>
-      </div>
-      <p class="muted" style="margin-top:10px">Observação: estas são recomendações gerais. Para condições médicas específicas, consulta um profissional de saúde.</p>
-    </section>
-
-    <section id="produtos">
-      <h2>Produtos recomendados</h2>
-      <p class="muted">Seleção honesta de itens úteis para suporte ao bem-estar (links para compra e contacto direto).</p>
-
-      <div class="product-grid" style="margin-top:12px">
-        <div class="card">
-          <h3>Tapete de yoga antideslizante</h3>
-          <p class="muted">Espessura confortável para exercícios e alongamentos.</p>
-          <div style="margin-top:10px;display:flex;gap:8px">
-            <a class="btn btn-mais" href="https://wa.me/258871828517?text=Quero%20comprar%20tapete%20de%20yoga" target="_blank">Comprar / Info</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Garrafa térmica para água</h3>
-          <p class="muted">Ajuda a manter a hidratação diária de forma prática.</p>
-          <div style="margin-top:10px;display:flex;gap:8px">
-            <a class="btn btn-mais" href="https://wa.me/258871828517?text=Quero%20a%20garrafa%20térmica" target="_blank">Comprar / Info</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Bandas de resistência</h3>
-          <p class="muted">Versáteis para treino de força em casa e fáceis de guardar.</p>
-          <div style="margin-top:10px;display:flex;gap:8px">
-            <a class="btn btn-mais" href="https://wa.me/258871828517?text=Quero%20bandas%20de%20resistência" target="_blank">Comprar / Info</a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="contato">
-      <h2>Fala connosco</h2>
-      <p class="muted">Tens dúvidas ou queres um plano personalizado? Envia mensagem e respondemos com orientações práticas.</p>
-      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn btn-wpp" href="https://wa.me/258871828517?text=Olá%20Mussilipo%2C%20gostaria%20de%20um%20plano%20personalizado" target="_blank">📲 WhatsApp</a>
-        <a class="btn" style="background:transparent;border:2px dashed var(--accent1);color:var(--accent1);font-weight:800;text-decoration:none" href="#">✉️ Inscrever newsletter</a>
-      </div>
-    </section>
-
     <footer>
-      <div>© <strong>Mussilipo</strong> — Todos os direitos reservados.</div>
-      <div style="margin-top:6px;color:var(--muted);font-size:13px">Aviso: o conteúdo neste site é informativo e não substitui consulta médica profissional.</div>
+      <div>© <strong>Mussilipo Investimento</strong> — Contacto WhatsApp: +258 86 258 3032 • E-mola 862583032 • Titular: Alcido Armando Daniel Mussilipo</div>
     </footer>
   </div>
 
-  <div class="wpp-float">
-    <a href="https://wa.me/258871828517?text=Olá%20Mussilipo%2C%20tenho%20uma%20pergunta" target="_blank" aria-label="Contactar por WhatsApp">💬</a>
+  <!-- Floating WhatsApp -->
+  <div class="whats-float" aria-hidden="false">
+    <a class="whats-btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%2C%20gostaria%20de%20informações" target="_blank" rel="noopener">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.52 3.48C18.21 1.17 15.02 0 11.7 0 5.39 0 .22 5.17.22 11.48c0 2.03.53 4.03 1.53 5.77L0 24l6.95-1.77c1.58.86 3.35 1.33 5.28 1.33 6.31 0 11.48-5.17 11.48-11.48 0-3.32-1.17-6.51-3.19-8.78z" fill="#25D366"/>
+        <path d="M17.2 14.2c-.44-.22-2.6-1.28-3.01-1.43-.4-.14-.69-.22-.98.22-.28.44-1.1 1.43-1.36 1.72-.25.28-.5.31-.94.1-.44-.22-1.86-.68-3.54-2.17-1.31-1.21-2.19-2.7-2.45-3.15-.25-.44-.03-.68.19-.9.19-.19.44-.5.69-.75.25-.25.31-.44.47-.74.16-.31.08-.57-.04-.79-.11-.22-.98-2.36-1.34-3.25-.35-.86-.72-.74-.98-.76-.25-.02-.54-.02-.83-.02-.28 0-.74.1-1.13.47-.39.37-1.49 1.45-1.49 3.53 0 2.07 1.52 4.07 1.73 4.35.22.28 2.99 4.52 7.24 6.17 1.01.44 1.8.7 2.42.9 1.02.33 1.95.28 2.69.17.82-.12 2.6-1.06 2.97-2.08.37-1.02.37-1.89.26-2.08-.11-.18-.4-.28-.83-.5z" fill="white"/>
+      </svg>
+    </a>
   </div>
 
-  <script>
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click',function(e){
-        e.preventDefault();
-        const id=this.getAttribute('href').substring(1);
-        const el=document.getElementById(id);
-        if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-      });
-    });
-  </script>
 </body>
 </html>
