@@ -1,209 +1,131 @@
-<!doctype html>
-<html lang="pt-MZ">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mussilipo Investimento — Catálogos & Encomendas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#12021a; /* dark purple */
-      --card:#1a0b2a;
-      --accent:#7b2cff; /* bright purple */
-      --muted:#cfc6e6;
-      --glass: rgba(255,255,255,0.04);
-      --maxw:1100px;
-    }
-    *{box-sizing:border-box;font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #0f0220 100%);color:var(--muted)}
-    .container{max-width:var(--maxw);margin:40px auto;padding:28px}
-    header{display:flex;gap:18px;align-items:center}
-    .logo{background:linear-gradient(135deg,var(--accent),#5e33ff);padding:12px;border-radius:10px;color:white;font-weight:800;font-size:18px}
-    h1{font-size:28px;margin:0}
-    p.lead{color:#e9e1ff;margin-top:6px}
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:20px}
-    .card{background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.02));border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
-    .features{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
-    .feature{background:var(--glass);padding:12px;border-radius:10px}
-    .cta{display:flex;gap:12px;margin-top:18px}
-    .btn{background:var(--accent);border:none;color:white;padding:12px 16px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none}
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
-    .right-card{display:flex;flex-direction:column;gap:12px;align-items:stretch}
-    .sec{margin-top:22px}
-    .grid-sections{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
-    .section-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px}
-    .section-card h3{margin:0 0 8px 0}
-    .section-card p{margin:0 0 12px 0;color:#e6ddff}
-    footer{margin-top:30px;padding:12px;text-align:center;color:#cfc6e6;opacity:0.9}
-    .whats-float{position:fixed;right:18px;bottom:18px;z-index:999}
-    .whats-btn{width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(123,44,255,0.3);background:linear-gradient(135deg,#25D366,#128C7E);border:4px solid rgba(255,255,255,0.06)}
-    .whats-btn img{width:36px;height:36px}
-    .section-actions{display:flex;gap:8px;flex-wrap:wrap}
-    .small{font-size:13px;padding:8px 10px}
-    .pill{display:inline-block;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:999px;color:#f3eefe;font-weight:600}
-    .payment{background:linear-gradient(90deg, rgba(123,44,255,0.12), rgba(255,255,255,0.02));padding:12px;border-radius:10px;margin-top:12px}
-    .owners{font-size:13px;opacity:0.9}
-    @media (max-width:880px){
-      .hero{grid-template-columns:1fr}
-      .grid-sections{grid-template-columns:1fr}
-      .right-card{order:-1}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SlimDetox Pro - Emagreça Naturalmente</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+header{
+    background:#1a8f3c;
+    color:#fff;
+    padding:25px;
+    text-align:center;
+}
+.price{
+    background:#fff;
+    color:#1a8f3c;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:8px;
+    margin-top:10px;
+}
+.container{
+    padding:20px;
+    max-width:900px;
+    margin:auto;
+}
+h1,h2{
+    text-align:center;
+}
+.btn{
+    display:block;
+    width:100%;
+    padding:15px;
+    background:#28a745;
+    color:#fff;
+    text-align:center;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    margin-top:15px;
+}
+.box{
+    background:#fff;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+}
+footer{
+    font-size:12px;
+    color:#777;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="logo">MUSSILIPO INVESTIMENTO</div>
-      <div>
-        <h1>Catálogos & Encomendas — Acessórios, Tecnologia, Moda, Beleza e mais</h1>
-        <p class="lead">📦 Importamos o que quiseres • Entregas seguras • Pagamento fácil — E-mola: <strong>862583032</strong></p>
-      </div>
-    </header>
 
-    <div class="hero">
-      <div class="card">
-        <h2>🎯 Atenção — Tens tudo num só lugar</h2>
-        <p>Somos a tua porta de entrada para produtos importados: acessórios & tecnologias, moda, saúde & beleza, desporto e muito mais. Pedidos por encomenda com fornecedores verificados e entrega rastreada.</p>
+<header>
+<h1>🔥 SlimDetox Pro</h1>
+<p>Emagreça de forma natural e saudável</p>
 
-        <div class="features">
-          <div class="feature"><strong>🚀 Rápido</strong><div class="small">Processamento ágil e comunicação direta via WhatsApp</div></div>
-          <div class="feature"><strong>🔒 Seguro</strong><div class="small">Produtos verificados antes do envio</div></div>
-          <div class="feature"><strong>💸 Pagamento</strong><div class="small">E-mola disponível: <strong>862583032</strong></div></div>
-          <div class="feature"><strong>📦 Variedade</strong><div class="small">Importamos quase tudo por encomenda</div></div>
-        </div>
+<div class="price">
+Preço: 1050 MZN <br>
+🔥 Desconto de 10% na primeira compra!
+</div>
 
-        <div class="cta">
-          <a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%2C+quero+fazer+um+pedido+de+importa%C3%A7%C3%A3o">💬 Falar pelo WhatsApp</a>
-          <a class="btn ghost" href="#catalogos">Ver Catálogos</a>
-        </div>
+<a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20vi%20o%20seu%20quiz%20e%20quero%20o%20seu%20ch%C3%A1%20para%20o%20emagrecimento%2C%20porque%20foi%20o%20melhor%20indicado%20para%20mim%20e%20quero%20o%20meu%20desconto%20de%2010%25%20pois%20%C3%A9%20a%20minha%20primeira%20vez%20na%20compra">
+Quero comprar o meu chá
+</a>
 
-        <div class="payment">
-          <strong>💳 Método de Pagamento</strong>
-          <p style="margin:8px 0 0 0">E-mola: <strong>862583032</strong> — Titular: <strong>Alcido Armando Daniel Mussilipo</strong></p>
-        </div>
+</header>
 
-      </div>
+<div class="container">
 
-      <aside class="right-card">
-        <div class="card">
-          <h3>📣 Oferta</h3>
-          <p style="margin:6px 0">Reservas com entrada — Descontos para compras por atacado. Envia o link do produto e recebes orçamento em 24h.</p>
-          <div class="section-actions">
-            <a class="btn small" href="https://wa.me/258862583032?text=Quero+or%C3%A7amento+para+importa%C3%A7%C3%A3o">Pedir Orçamento</a>
-            <a class="btn small ghost" href="#metodo">Como Pagar</a>
-          </div>
-        </div>
+<div class="box">
+<h2>⚠️ Você está com dificuldade para emagrecer?</h2>
+<p>Mesmo tentando dietas e exercícios, a barriga não diminui?</p>
+</div>
 
-        <div class="card">
-          <h3>📞 Contactos</h3>
-          <p class="small">WhatsApp: +258 86 258 3032<br/>Titular E-mola: Alcido Armando Daniel Mussilipo</p>
-          <a class="btn small" href="https://wa.me/258862583032?text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es">Falar agora</a>
-        </div>
-      </aside>
-    </div>
+<div class="box">
+<h2>🍃 A solução natural chegou</h2>
+<p>O <strong>SlimDetox Pro</strong> é um chá natural que ajuda a:</p>
 
-    <main id="catalogos">
-      <section class="sec">
-        <h2>📚 Catálogos Disponíveis</h2>
-        <p class="small">Escolhe a categoria e manda o produto que queres — trazemos por encomenda.</p>
+<ul>
+<li>🔥 Queimar gordura</li>
+<li>💧 Reduzir inchaço</li>
+<li>⚡ Acelerar metabolismo</li>
+<li>🍽️ Controlar apetite</li>
+<li>💚 Aumentar energia</li>
+</ul>
+</div>
 
-        <div class="grid-sections">
-          <div class="section-card">
-            <h3>🔌 Acessórios & Tecnologia</h3>
-            <p>Capas, cabos, fones, powerbanks, smartwatches, mini projetores e gadgets modernos. Produtos testados e garantidos.</p>
-            <p><strong>AIDA:</strong></p>
-            <ul>
-              <li><strong>Atenção:</strong> Últimos gadgets e acessórios em promoção 🎧</li>
-              <li><strong>Interesse:</strong> Produtos testados e fornecedores verificados.</li>
-              <li><strong>Desejo:</strong> Modelos originais e alternativas económico/premium.</li>
-              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+um+acess%C3%B3rio+%26+tecnologia">Pedir Orçamento</a></li>
-            </ul>
-          </div>
+<div class="box">
+<h2>💬 Depoimentos</h2>
+<p>✔ “Perdi barriga em poucos dias”</p>
+<p>✔ “Me sinto mais leve e confiante”</p>
+<p>✔ “Funcionou muito melhor do que dieta”</p>
+</div>
 
-          <div class="section-card">
-            <h3>👗 Moda & Vestuário</h3>
-            <p>Roupas, ténis, acessórios e uniformes. Peças importadas por encomenda — tamanhos disponíveis sob consulta.</p>
-            <p><strong>AIDA:</strong></p>
-            <ul>
-              <li><strong>Atenção:</strong> Peças únicas e tendências internacionais ✨</li>
-              <li><strong>Interesse:</strong> Fotos reais e descrição completa.</li>
-              <li><strong>Desejo:</strong> Opções premium e económicas.</li>
-              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+roupa+por+encomenda">Solicitar Produto</a></li>
-            </ul>
-          </div>
+<div class="box">
+<h2>💳 Métodos de pagamento</h2>
 
-          <div class="section-card">
-            <h3>💄 Saúde, Beleza & Cosmética</h3>
-            <p>Séruns, maquilhagem, shampoos, perfumes e suplementos. Trabalhamos com marcas de confiança.</p>
-            <p><strong>AIDA:</strong></p>
-            <ul>
-              <li><strong>Atenção:</strong> Produtos originais e lacrados 💎</li>
-              <li><strong>Interesse:</strong> Ingredientes & benefícios detalhados.</li>
-              <li><strong>Desejo:</strong> Kits e descontos para clientes regulares.</li>
-              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+cosm%C3%A9ticos">Pedir Agora</a></li>
-            </ul>
-          </div>
+<p><strong>eMola:</strong><br>
+862583032<br>
+Titular: Alcido Armando Daniel Mussilipo</p>
 
-          <div class="section-card">
-            <h3>🏅 Desporto</h3>
-            <p>Chuteiras, bolas, equipamento de ginásio e acessórios para treino — ideal para clubes e academias.</p>
-            <p><strong>AIDA:</strong></p>
-            <ul>
-              <li><strong>Atenção:</strong> Equipamentos profissionais e amadores ⚽</li>
-              <li><strong>Interesse:</strong> Tamanhos e specs técnicos disponíveis.</li>
-              <li><strong>Desejo:</strong> Preços competitivos para compras em atacado.</li>
-              <li><strong>Ação:</strong> <a class="pill" href="https://wa.me/258862583032?text=Quero+material+de+desporto">Pedir Cotação</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<p><strong>Millennium BIM:</strong><br>
+000100000125122957957<br>
+Titular: Alcido Armando Daniel Mussilipo</p>
 
-      <section class="sec">
-        <div class="card">
-          <h3 id="metodo">💳 Método de Pagamento & Segurança</h3>
-          <p>Nós aceitamos pagamentos via <strong>E-mola</strong>. Para efetuar o pagamento, usa os dados abaixo:</p>
-          <p class="small"><strong>E-mola:</strong> <strong>862583032</strong><br/>Titular: <strong>Alcido Armando Daniel Mussilipo</strong></p>
-          <p style="margin-top:8px">Depois do pagamento, envia o comprovante no WhatsApp. Reservas com entrada são aceites para garantir stock e acelerar a importação.</p>
-        </div>
-      </section>
+</div>
 
-      <section class="sec">
-        <div class="card">
-          <h3>🧭 Como Pedir (passo a passo)</h3>
-          <ol>
-            <li>Envia foto ou link do produto pelo WhatsApp.</li>
-            <li>Indica modelo, cor, tamanho e quantidade.</li>
-            <li>Recebe o orçamento final com prazo de entrega.</li>
-            <li>Confirma com entrada (se aplicável) e envia comprovante.</li>
-            <li>Recebe rastreamento e entrega local.</li>
-          </ol>
-          <p class="small">Dúvidas? Clica em <a class="pill" href="https://wa.me/258862583032?text=Tenho+uma+duvida+sobre+o+processo">Falar com Suporte</a></p>
-        </div>
-      </section>
+</div>
 
-      <section class="sec">
-        <div class="card">
-          <h3>⚖ Direito e Propriedade</h3>
-          <p class="owners">Todos os conteúdos e catálogos aqui apresentados estão sob o direito de <strong>Mussilipo Investimento</strong>. Qualquer reprodução ou uso comercial sem autorização é proibido.</p>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      <div>© <strong>Mussilipo Investimento</strong> — Contacto WhatsApp: +258 86 258 3032 • E-mola 862583032 • Titular: Alcido Armando Daniel Mussilipo</div>
-    </footer>
-  </div>
-
-  <!-- Floating WhatsApp -->
-  <div class="whats-float" aria-hidden="false">
-    <a class="whats-btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%2C%20gostaria%20de%20informações" target="_blank" rel="noopener">
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20.52 3.48C18.21 1.17 15.02 0 11.7 0 5.39 0 .22 5.17.22 11.48c0 2.03.53 4.03 1.53 5.77L0 24l6.95-1.77c1.58.86 3.35 1.33 5.28 1.33 6.31 0 11.48-5.17 11.48-11.48 0-3.32-1.17-6.51-3.19-8.78z" fill="#25D366"/>
-        <path d="M17.2 14.2c-.44-.22-2.6-1.28-3.01-1.43-.4-.14-.69-.22-.98.22-.28.44-1.1 1.43-1.36 1.72-.25.28-.5.31-.94.1-.44-.22-1.86-.68-3.54-2.17-1.31-1.21-2.19-2.7-2.45-3.15-.25-.44-.03-.68.19-.9.19-.19.44-.5.69-.75.25-.25.31-.44.47-.74.16-.31.08-.57-.04-.79-.11-.22-.98-2.36-1.34-3.25-.35-.86-.72-.74-.98-.76-.25-.02-.54-.02-.83-.02-.28 0-.74.1-1.13.47-.39.37-1.49 1.45-1.49 3.53 0 2.07 1.52 4.07 1.73 4.35.22.28 2.99 4.52 7.24 6.17 1.01.44 1.8.7 2.42.9 1.02.33 1.95.28 2.69.17.82-.12 2.6-1.06 2.97-2.08.37-1.02.37-1.89.26-2.08-.11-.18-.4-.28-.83-.5z" fill="white"/>
-      </svg>
-    </a>
-  </div>
+<footer>
+<p>© 2026 Mussilipo Investimento. Todos os direitos reservados.</p>
+<p>⚠️ Este produto é natural e não substitui orientação médica. Resultados podem variar.</p>
+</footer>
 
 </body>
-</html>
+  </html>
