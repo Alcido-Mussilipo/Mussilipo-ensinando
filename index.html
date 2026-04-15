@@ -9,15 +9,29 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background:#f5f5f5;
+    background: linear-gradient(135deg,#e8f5e9,#ffffff);
     color:#333;
 }
+
+/* TOPO */
+.topo{
+    background:#0f7a32;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* HEADER */
 header{
     background:#1a8f3c;
     color:#fff;
     padding:25px;
     text-align:center;
 }
+
+/* PREÇO */
 .price{
     background:#fff;
     color:#1a8f3c;
@@ -27,14 +41,8 @@ header{
     border-radius:8px;
     margin-top:10px;
 }
-.container{
-    padding:20px;
-    max-width:900px;
-    margin:auto;
-}
-h1,h2{
-    text-align:center;
-}
+
+/* BOTÃO 3D */
 .btn{
     display:block;
     width:100%;
@@ -43,17 +51,59 @@ h1,h2{
     color:#fff;
     text-align:center;
     font-size:18px;
-    border:none;
-    border-radius:8px;
+    border-radius:10px;
     text-decoration:none;
     margin-top:15px;
+    box-shadow:0 6px 0 #1e7e34;
+    transition:0.2s;
 }
+.btn:active{
+    transform:translateY(4px);
+    box-shadow:0 2px 0 #1e7e34;
+}
+
+/* CONTAINER */
+.container{
+    padding:20px;
+    max-width:900px;
+    margin:auto;
+}
+
+/* BOX */
 .box{
     background:#fff;
     padding:20px;
     margin:20px 0;
-    border-radius:10px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
+
+/* COPY BUTTON */
+.copy-btn{
+    margin-top:5px;
+    padding:8px 12px;
+    background:#007bff;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* BOTÃO FLUTUANTE */
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:#fff;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
 footer{
     font-size:12px;
     color:#777;
@@ -61,9 +111,21 @@ footer{
     padding:20px;
 }
 </style>
+
+<script>
+function copiarTexto(texto){
+    navigator.clipboard.writeText(texto);
+    alert("Copiado: " + texto);
+}
+</script>
+
 </head>
 
 <body>
+
+<div class="topo">
+🔥 COMPRA 100% SEGURA 🔥
+</div>
 
 <header>
 <h1>🔥 SlimDetox Pro</h1>
@@ -71,7 +133,7 @@ footer{
 
 <div class="price">
 Preço: 1050 MZN <br>
-🔥 Desconto de 10% na primeira compra!
+🔥 10% OFF na primeira compra
 </div>
 
 <a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20vi%20o%20seu%20quiz%20e%20quero%20o%20seu%20ch%C3%A1%20para%20o%20emagrecimento%2C%20porque%20foi%20o%20melhor%20indicado%20para%20mim%20e%20quero%20o%20meu%20desconto%20de%2010%25%20pois%20%C3%A9%20a%20minha%20primeira%20vez%20na%20compra">
@@ -83,44 +145,45 @@ Quero comprar o meu chá
 <div class="container">
 
 <div class="box">
-<h2>⚠️ Você está com dificuldade para emagrecer?</h2>
-<p>Mesmo tentando dietas e exercícios, a barriga não diminui?</p>
-</div>
-
-<div class="box">
-<h2>🍃 A solução natural chegou</h2>
-<p>O <strong>SlimDetox Pro</strong> é um chá natural que ajuda a:</p>
-
+<h2>🍃 Benefícios</h2>
 <ul>
-<li>🔥 Queimar gordura</li>
-<li>💧 Reduzir inchaço</li>
-<li>⚡ Acelerar metabolismo</li>
-<li>🍽️ Controlar apetite</li>
-<li>💚 Aumentar energia</li>
+<li>🔥 Queima gordura</li>
+<li>💧 Reduz inchaço</li>
+<li>⚡ Acelera metabolismo</li>
+<li>🍽️ Controla apetite</li>
+<li>💚 Mais energia</li>
 </ul>
 </div>
 
 <div class="box">
-<h2>💬 Depoimentos</h2>
-<p>✔ “Perdi barriga em poucos dias”</p>
-<p>✔ “Me sinto mais leve e confiante”</p>
-<p>✔ “Funcionou muito melhor do que dieta”</p>
+<h2>💳 Pagamento</h2>
+
+<p><strong>eMola:</strong><br>
+862583032</p>
+<button class="copy-btn" onclick="copiarTexto('862583032')">Copiar</button>
+
+<p><strong>Millennium BIM:</strong><br>
+000100000125122957957</p>
+<button class="copy-btn" onclick="copiarTexto('000100000125122957957')">Copiar</button>
+
+<p><strong>Titular:</strong><br>
+Alcido Armando Daniel Mussilipo</p>
+
 </div>
 
 <div class="box">
-<h2>💳 Métodos de pagamento</h2>
+<h2>📤 Enviar Comprovativo</h2>
 
-<p><strong>eMola:</strong><br>
-862583032<br>
-Titular: Alcido Armando Daniel Mussilipo</p>
-
-<p><strong>Millennium BIM:</strong><br>
-000100000125122957957<br>
-Titular: Alcido Armando Daniel Mussilipo</p>
+<a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20j%C3%A1%20fiz%20o%20pagamento%20e%20vou%20enviar%20o%20comprovativo">
+Enviar comprovativo no WhatsApp
+</a>
 
 </div>
 
 </div>
+
+<!-- BOTÃO FLUTUANTE -->
+<a class="whatsapp-float" href="https://wa.me/258862583032">💬</a>
 
 <footer>
 <p>© 2026 Mussilipo Investimento. Todos os direitos reservados.</p>
@@ -128,4 +191,4 @@ Titular: Alcido Armando Daniel Mussilipo</p>
 </footer>
 
 </body>
-  </html>
+                         </html>
