@@ -9,8 +9,16 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#e8f5e9,#ffffff);
     color:#333;
+    background: linear-gradient(-45deg, #e8f5e9, #c8e6c9, #ffffff, #d0f0d8);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 
 /* TOPO */
@@ -19,13 +27,13 @@ body{
     color:#fff;
     text-align:center;
     padding:15px;
-    font-size:22px;
+    font-size:24px;
     font-weight:bold;
 }
 
 /* HEADER */
 header{
-    background:#1a8f3c;
+    background:rgba(26,143,60,0.95);
     color:#fff;
     padding:25px;
     text-align:center;
@@ -42,24 +50,27 @@ header{
     margin-top:10px;
 }
 
-/* BOTÃO 3D */
+/* BOTÃO PROFISSIONAL */
 .btn{
     display:block;
     width:100%;
-    padding:15px;
-    background:#28a745;
+    padding:16px;
+    background: linear-gradient(145deg,#28a745,#1e7e34);
     color:#fff;
     text-align:center;
     font-size:18px;
-    border-radius:10px;
+    border-radius:12px;
     text-decoration:none;
     margin-top:15px;
-    box-shadow:0 6px 0 #1e7e34;
-    transition:0.2s;
+    box-shadow:0 8px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 12px 20px rgba(0,0,0,0.3);
 }
 .btn:active{
-    transform:translateY(4px);
-    box-shadow:0 2px 0 #1e7e34;
+    transform:scale(0.98);
 }
 
 /* CONTAINER */
@@ -75,7 +86,7 @@ header{
     padding:20px;
     margin:20px 0;
     border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
 
 /* COPY BUTTON */
@@ -89,24 +100,24 @@ header{
     cursor:pointer;
 }
 
-/* BOTÃO FLUTUANTE */
+/* WHATSAPP FLOAT */
 .whatsapp-float{
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25d366;
     color:#fff;
-    padding:15px;
+    padding:16px;
     border-radius:50%;
-    font-size:20px;
+    font-size:22px;
     text-decoration:none;
-    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    box-shadow:0 6px 12px rgba(0,0,0,0.3);
 }
 
 /* FOOTER */
 footer{
     font-size:12px;
-    color:#777;
+    color:#555;
     text-align:center;
     padding:20px;
 }
@@ -129,7 +140,7 @@ function copiarTexto(texto){
 
 <header>
 <h1>🔥 SlimDetox Pro</h1>
-<p>Emagreça de forma natural e saudável</p>
+<p>O chá natural que está ajudando pessoas a emagrecer sem sofrimento</p>
 
 <div class="price">
 Preço: 1050 MZN <br>
@@ -137,7 +148,7 @@ Preço: 1050 MZN <br>
 </div>
 
 <a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20vi%20o%20seu%20quiz%20e%20quero%20o%20seu%20ch%C3%A1%20para%20o%20emagrecimento%2C%20porque%20foi%20o%20melhor%20indicado%20para%20mim%20e%20quero%20o%20meu%20desconto%20de%2010%25%20pois%20%C3%A9%20a%20minha%20primeira%20vez%20na%20compra">
-Quero comprar o meu chá
+💬 Comprar pelo WhatsApp
 </a>
 
 </header>
@@ -145,14 +156,40 @@ Quero comprar o meu chá
 <div class="container">
 
 <div class="box">
-<h2>🍃 Benefícios</h2>
+<h2>⚠️ Cansado de tentar emagrecer sem resultados?</h2>
+<p>Se você já tentou dietas, exercícios e mesmo assim a barriga não diminui… o problema pode não ser falta de esforço.</p>
+
+<p><strong>O verdadeiro problema pode ser:</strong></p>
 <ul>
-<li>🔥 Queima gordura</li>
-<li>💧 Reduz inchaço</li>
-<li>⚡ Acelera metabolismo</li>
-<li>🍽️ Controla apetite</li>
-<li>💚 Mais energia</li>
+<li>Metabolismo lento</li>
+<li>Retenção de líquidos</li>
+<li>Acúmulo de gordura abdominal</li>
 </ul>
+</div>
+
+<div class="box">
+<h2>🍃 A solução natural que está fazendo diferença</h2>
+
+<p>O <strong>SlimDetox Pro</strong> foi desenvolvido para ajudar o seu corpo a trabalhar a favor do emagrecimento:</p>
+
+<ul>
+<li>🔥 Queima gordura naturalmente</li>
+<li>💧 Elimina líquidos retidos</li>
+<li>⚡ Acelera o metabolismo</li>
+<li>🍽️ Controla o apetite</li>
+<li>💚 Aumenta sua energia diária</li>
+</ul>
+
+<p><strong>👉 Resultado:</strong> Você começa a sentir o corpo mais leve, menos inchado e mais confiante.</p>
+</div>
+
+<div class="box">
+<h2>💬 Resultados reais</h2>
+<p>✔ Pessoas relatam menos barriga em poucos dias</p>
+<p>✔ Sensação de leveza e bem-estar</p>
+<p>✔ Roupas voltando a servir</p>
+
+<p><strong>Agora é sua vez.</strong></p>
 </div>
 
 <div class="box">
@@ -172,17 +209,16 @@ Alcido Armando Daniel Mussilipo</p>
 </div>
 
 <div class="box">
-<h2>📤 Enviar Comprovativo</h2>
+<h2>📤 Já fez o pagamento?</h2>
 
 <a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20j%C3%A1%20fiz%20o%20pagamento%20e%20vou%20enviar%20o%20comprovativo">
-Enviar comprovativo no WhatsApp
+📤 Enviar comprovativo no WhatsApp
 </a>
 
 </div>
 
 </div>
 
-<!-- BOTÃO FLUTUANTE -->
 <a class="whatsapp-float" href="https://wa.me/258862583032">💬</a>
 
 <footer>
@@ -191,4 +227,4 @@ Enviar comprovativo no WhatsApp
 </footer>
 
 </body>
-                         </html>
+    </html>
