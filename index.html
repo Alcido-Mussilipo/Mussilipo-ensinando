@@ -3,257 +3,248 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SlimDetox Pro - Emagreça Naturalmente</title>
-    
+
+<title>Loja Online</title>
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    color:#fff;
-    background: radial-gradient(circle at top, #2a0a3d, #120018, #000);
+background:#f5f9fa;
 }
 
-/* ESTRELAS */
-body::before{
-    content:"";
-    position:fixed;
-    width:100%;
-    height:100%;
-    background:url('https://www.transparenttextures.com/patterns/stardust.png');
-    opacity:0.4;
-    z-index:-1;
-}
-
-/* TOPO */
-.topo{
-    background:#6a0dad;
-    text-align:center;
-    padding:15px;
-    font-size:24px;
-    font-weight:bold;
-}
-
-/* HEADER */
 header{
-    text-align:center;
-    padding:30px;
+background:linear-gradient(90deg,#009688,#1565C0);
+color:#fff;
+padding:25px;
+text-align:center;
 }
 
-/* PREÇO */
-.price{
-    background:#fff;
-    color:#6a0dad;
-    padding:15px;
-    font-size:22px;
-    font-weight:bold;
-    border-radius:10px;
-    margin-top:10px;
+header h1{
+font-size:32px;
 }
 
-/* BOTÃO */
-.btn{
-    display:block;
-    width:100%;
-    padding:16px;
-    background: linear-gradient(145deg,#25d366,#128c7e);
-    color:#fff;
-    text-align:center;
-    font-size:18px;
-    border-radius:12px;
-    text-decoration:none;
-    margin-top:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.4);
-    transition:0.3s;
-}
-.btn:hover{
-    transform:scale(1.05);
+header p{
+margin-top:10px;
 }
 
-/* CONTAINER */
-.container{
-    padding:20px;
-    max-width:900px;
-    margin:auto;
+.emola{
+background:#fff;
+margin:20px;
+padding:20px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+text-align:center;
 }
 
-/* BOX */
-.box{
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    padding:20px;
-    margin:20px 0;
-    border-radius:15px;
-    box-shadow:0 0 15px rgba(138,43,226,0.3);
+.numero{
+font-size:25px;
+font-weight:bold;
+color:#1565C0;
+margin:15px 0;
 }
 
-/* PAGAMENTO */
-.payment-card{
-    background: linear-gradient(135deg,#6a0dad,#8a2be2);
-    padding:15px;
-    border-radius:12px;
-    margin-top:10px;
+button{
+background:#009688;
+color:#fff;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
 }
 
-/* COPY */
-.copy-btn{
-    margin-top:10px;
-    padding:10px;
-    background:#00c853;
-    color:#fff;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    width:100%;
+button:hover{
+background:#00796B;
 }
 
-/* BOTÃO FLUTUANTE */
-.whatsapp-float{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-    background: linear-gradient(145deg,#25d366,#128c7e);
-    color:#fff;
-    padding:12px 18px;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:bold;
-    box-shadow:0 8px 20px rgba(0,0,0,0.4);
-    animation:pulse 2s infinite;
+.produtos{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:20px;
+
 }
 
-@keyframes pulse{
-    0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7);}
-    70%{box-shadow:0 0 0 15px rgba(37,211,102,0);}
-    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+.card{
+
+width:320px;
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
 }
 
-/* FOOTER */
+.card img{
+
+width:100%;
+height:250px;
+object-fit:cover;
+
+}
+
+.info{
+
+padding:20px;
+
+}
+
+.preco{
+
+font-size:30px;
+color:#1565C0;
+font-weight:bold;
+margin:10px 0;
+
+}
+
+.comprar{
+
+width:100%;
+margin-top:15px;
+
+}
+
 footer{
-    font-size:12px;
-    text-align:center;
-    padding:20px;
-    color:#ccc;
-}
-</style>
 
-<script>
-function copiarTexto(texto){
-    navigator.clipboard.writeText(texto);
-    alert("Copiado: " + texto);
+margin-top:40px;
+background:#1565C0;
+color:#fff;
+text-align:center;
+padding:20px;
+
 }
-</script>
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+width:65px;
+height:65px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+text-decoration:none;
+color:#fff;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-<div class="topo">
-✨ COMPRA 100% SEGURA ✨
-</div>
-<img src="foto.jpg" alt="Minha foto">
 <header>
-<h1>🔥 Elimine a barriga e o inchaço de forma natural</h1>
-<p>Descubra o chá que está ajudando pessoas a emagrecer sem dietas malucas</p>
 
-<div class="price">
-Preço: 1050 MZN <br>
-🔥 10% OFF na primeira compra
-</div>
+<h1>Minha Loja</h1>
 
-<a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20vi%20o%20seu%20quiz%20e%20quero%20o%20seu%20ch%C3%A1%20para%20emagrecimento%20com%2010%25%20de%20desconto">
-💬 Quero emagrecer agora
-</a>
+<p>Produtos de qualidade</p>
 
 </header>
 
-<div class="container">
+<div class="emola">
 
-<div class="box">
-<h2>⚠️ Você está passando por isso?</h2>
+<h2>Pagamento via Emola</h2>
 
-<ul>
-<li>❌ A barriga não diminui</li>
-<li>❌ Se sente inchado(a)</li>
-<li>❌ Come pouco, mas não perde peso</li>
-<li>❌ Já tentou várias coisas e nada funciona</li>
-</ul>
-
-<p><strong>👉 O problema pode não ser você…</strong><br>
-Mas sim o seu metabolismo e retenção de líquidos.</p>
+<div class="numero" id="numero">
+875743692
 </div>
 
-<div class="box">
-<h2>🍃 A solução natural que está mudando vidas</h2>
-
-<ul>
-<li>🔥 Queima gordura acumulada</li>
-<li>💧 Elimina líquidos retidos</li>
-<li>⚡ Acelera o metabolismo</li>
-<li>🍽️ Controla o apetite naturalmente</li>
-</ul>
-
-<p><strong>👉 Resultado:</strong> menos barriga, menos inchaço e mais confiança!</p>
-</div>
-
-<div class="box">
-<h2>✨ Imagine isso acontecendo com você...</h2>
-
-<p>✔ Olhar no espelho e gostar do que vê</p>
-<p>✔ Vestir suas roupas favoritas novamente</p>
-<p>✔ Sentir-se leve, confiante e feliz</p>
-
-<p><strong>👉 Isso começa com uma decisão hoje.</strong></p>
-</div>
-
-<div class="box">
-<h2>🚨 Oferta limitada</h2>
-
-<p>🔥 <strong>10% de desconto na primeira compra</strong></p>
-<p>⚠️ Promoção pode acabar a qualquer momento</p>
-</div>
-
-<div class="box">
-<h2>💳 Métodos de Pagamento</h2>
-
-<div class="payment-card">
-<strong>eMola</strong><br>
-Número: 862583032<br>
-Titular: Alcido Armando Daniel Mussilipo
-<button class="copy-btn" onclick="copiarTexto('862583032')">📋 Copiar</button>
-</div>
-
-<div class="payment-card">
-<strong>Millennium BIM</strong><br>
-Conta NIB: 000100000125122957957<br>
-Titular: Alcido Armando Daniel Mussilipo
-<button class="copy-btn" onclick="copiarTexto('000100000125122957957')">📋 Copiar</button>
-</div>
+<button onclick="copiar()">
+Copiar Número
+</button>
 
 </div>
 
-<div class="box">
-<h2>📤 Já fez o pagamento?</h2>
+<div class="produtos">
 
-<a class="btn" href="https://wa.me/258862583032?text=Ol%C3%A1%20Mussilipo%20Investimento%2C%20j%C3%A1%20fiz%20o%20pagamento%20e%20vou%20enviar%20o%20comprovativo">
-📤 Enviar comprovativo no WhatsApp
-</a>
+<div class="card">
+
+<img src="produto1.jpg">
+
+<div class="info">
+
+<h2>Produto 1</h2>
+
+<p>Descrição do produto.</p>
+
+<div class="preco">
+250 MT
+</div>
+
+<button class="comprar">
+Comprar
+</button>
 
 </div>
 
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/258862583032?text=Ol%C3%A1%20preciso%20de%20ajuda%20sobre%20o%20ch%C3%A1">
-💬 Atendimento
-</a>
+<div class="card">
+
+<img src="produto2.jpg">
+
+<div class="info">
+
+<h2>Produto 2</h2>
+
+<p>Descrição do produto.</p>
+
+<div class="preco">
+500 MT
+</div>
+
+<button class="comprar">
+Comprar
+</button>
+
+</div>
+
+</div>
+
+</div>
 
 <footer>
-<p>© 2026 Mussilipo Investimento. Todos os direitos reservados.</p>
-<p>⚠️ Produto natural. Resultados podem variar.</p>
+
+© 2026 Todos os Direitos Reservados
+
 </footer>
 
+<a
+class="whatsapp"
+href="https://wa.me/258875743692"
+target="_blank">
+
+💬
+
+</a>
+
+<script>
+
+function copiar(){
+
+navigator.clipboard.writeText("875743692");
+
+alert("Número copiado!");
+
+}
+
+</script>
+
 </body>
-    </html>
+</html>
