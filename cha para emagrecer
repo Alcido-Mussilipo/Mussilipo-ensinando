@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Slim Tea 14 Day | Mussilipo Investimento</title>
+  <meta name="description" content="Conheça o Slim Tea 14 Day. Consulte todos os detalhes do produto e faça a sua encomenda através da página oficial.">
+
+  <style>
+    :root{
+      --green:#39b54a;
+      --green-dark:#188c35;
+      --green-light:#eaffed;
+      --dark:#102016;
+      --white:#fff;
+      --muted:#5d6b61;
+      --shadow:0 15px 45px rgba(20,80,35,.13);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      background:#f7fbf7;
+      color:var(--dark);
+      line-height:1.6;
+    }
+
+    .topbar{
+      background:var(--green-dark);
+      color:#fff;
+      text-align:center;
+      padding:10px 15px;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    header{
+      background:
+        radial-gradient(circle at 10% 20%, rgba(89,210,92,.18), transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(255,255,255,.15), transparent 25%),
+        linear-gradient(135deg,#0d5e24,#39b54a);
+      color:#fff;
+      padding:22px 6% 70px;
+      overflow:hidden;
+    }
+
+    nav{
+      max-width:1150px;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+    }
+
+    .logo{
+      font-size:22px;
+      font-weight:900;
+      letter-spacing:.4px;
+    }
+
+    .nav-btn{
+      color:#fff;
+      text-decoration:none;
+      border:1px solid rgba(255,255,255,.55);
+      padding:9px 16px;
+      border-radius:999px;
+      font-weight:700;
+    }
+
+    .hero{
+      max-width:1150px;
+      margin:55px auto 0;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      gap:55px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#fff;
+      color:var(--green-dark);
+      padding:8px 15px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:900;
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-size:clamp(40px,6vw,70px);
+      line-height:1.02;
+      margin-bottom:18px;
+    }
+
+    .hero p{
+      font-size:19px;
+      max-width:580px;
+      color:#effff1;
+      margin-bottom:28px;
+    }
+
+    .cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      background:#fff;
+      color:var(--green-dark);
+      font-weight:900;
+      padding:16px 26px;
+      border-radius:12px;
+      box-shadow:0 10px 25px rgba(0,0,0,.18);
+      transition:.25s;
+    }
+
+    .cta:hover{
+      transform:translateY(-3px);
+      box-shadow:0 15px 30px rgba(0,0,0,.25);
+    }
+
+    .product-photo{
+      width:100%;
+      max-width:500px;
+      display:block;
+      margin:auto;
+      border-radius:25px;
+      box-shadow:0 25px 60px rgba(0,0,0,.28);
+      background:#fff;
+    }
+
+    section{
+      padding:75px 6%;
+    }
+
+    .container{
+      max-width:1150px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:36px;
+      margin-bottom:12px;
+    }
+
+    .section-subtitle{
+      text-align:center;
+      color:var(--muted);
+      max-width:700px;
+      margin:0 auto 40px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .card{
+      background:#fff;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      border:1px solid #e7f1e8;
+    }
+
+    .icon{
+      width:55px;
+      height:55px;
+      border-radius:15px;
+      background:var(--green-light);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:27px;
+      margin-bottom:18px;
+    }
+
+    .card h3{
+      margin-bottom:8px;
+      font-size:20px;
+    }
+
+    .card p{color:var(--muted)}
+
+    .product-section{
+      background:linear-gradient(180deg,#effaf0,#fff);
+    }
+
+    .product-box{
+      max-width:950px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:45px;
+      align-items:center;
+      background:#fff;
+      padding:35px;
+      border-radius:25px;
+      box-shadow:var(--shadow);
+    }
+
+    .mini-photo{
+      width:100%;
+      border-radius:18px;
+    }
+
+    .product-box h2{
+      font-size:38px;
+      margin-bottom:12px;
+    }
+
+    .product-box p{
+      color:var(--muted);
+      margin-bottom:18px;
+    }
+
+    .check-list{
+      list-style:none;
+      margin:20px 0 25px;
+    }
+
+    .check-list li{
+      margin:11px 0;
+      font-weight:700;
+    }
+
+    .check-list li::before{
+      content:"✓";
+      color:var(--green);
+      font-weight:900;
+      margin-right:10px;
+    }
+
+    .green-cta{
+      background:var(--green);
+      color:#fff;
+      width:100%;
+    }
+
+    .green-cta:hover{
+      background:var(--green-dark);
+    }
+
+    .how{
+      background:#fff;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .step{
+      text-align:center;
+      padding:25px;
+    }
+
+    .number{
+      width:55px;
+      height:55px;
+      margin:0 auto 15px;
+      border-radius:50%;
+      background:var(--green);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:22px;
+      font-weight:900;
+    }
+
+    .final{
+      background:
+        radial-gradient(circle at 50% 0,rgba(255,255,255,.18),transparent 35%),
+        linear-gradient(135deg,#0b5b22,#35ad45);
+      color:#fff;
+      text-align:center;
+    }
+
+    .final h2{
+      font-size:clamp(32px,5vw,52px);
+      margin-bottom:14px;
+    }
+
+    .final p{
+      max-width:700px;
+      margin:0 auto 28px;
+      color:#edffef;
+    }
+
+    .notice{
+      max-width:900px;
+      margin:30px auto 0;
+      padding:18px;
+      border-radius:14px;
+      background:#fff;
+      color:#4d5a50;
+      font-size:13px;
+      text-align:center;
+    }
+
+    footer{
+      background:#0c1b10;
+      color:#d7e4d9;
+      text-align:center;
+      padding:25px 15px;
+      font-size:14px;
+    }
+
+    .floating{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      background:#25d366;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      font-size:29px;
+      box-shadow:0 8px 25px rgba(0,0,0,.25);
+      z-index:99;
+    }
+
+    @media(max-width:800px){
+      .hero,
+      .product-box{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero{
+        margin-top:40px;
+      }
+
+      .hero p{margin-left:auto;margin-right:auto}
+
+      .cards,
+      .steps{
+        grid-template-columns:1fr;
+      }
+
+      .product-box{
+        padding:22px;
+      }
+
+      .check-list{
+        text-align:left;
+      }
+
+      nav .nav-btn{
+        display:none;
+      }
+
+      section{
+        padding:55px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    🌿 SLIM TEA 14 DAY — Conheça o produto e veja como adquirir
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo">Mussilipo Investimento</div>
+      <a class="nav-btn" href="#produto">Ver produto</a>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <span class="badge">100% ORGANIC • ALL NATURAL*</span>
+
+        <h1>Slim Tea<br><span>14 Day</span></h1>
+
+        <p>
+          Uma opção prática para quem procura emegrecer rapido com um chá à sua rotina.
+          Conheça o produto, veja os detalhes e saiba como fazer a sua encomenda.
+        </p>
+
+        <a class="cta" href="https://mussilipo.blogspot.com/2026/08/cha-de-emagrecimento.html" target="_blank" rel="noopener">
+          🛒 ADQUIRIR / VER DETALHES
+        </a>
+      </div>
+
+      <div>
+        <img class="product-photo" src="foto.jpg" alt="Slim Tea 14 Day">
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Por que conhecer o Slim Tea?</h2>
+      <p class="section-subtitle">
+        Uma apresentação simples e clara para conhecer melhor o produto antes de fazer a sua encomenda.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Perfil natural</h3>
+          <p>
+            A embalagem apresenta o produto como um chá premium orgânico e natural.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🍵</div>
+          <h3>Fácil de incluir na rotina</h3>
+          <p>
+            Uma bebida em formato de chá que pode ser preparada conforme as instruções da embalagem.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">✨</div>
+          <h3>Praticidade</h3>
+          <p>
+            Uma opção prática para quem deseja conhecer uma alternativa em formato de chá.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produto" class="product-section">
+    <div class="container">
+      <div class="product-box">
+        <div>
+          <img class="mini-photo" src="1776282545550.png" alt="Embalagem Slim Tea 14 Day">
+        </div>
+
+        <div>
+          <h2>Slim Tea 14 Day</h2>
+
+          <p>
+            Na embalagem, o produto é apresentado como “14 Day Slim Tea” e
+            “100% Organic Premium Slimming Tea”.
+          </p>
+
+          <ul class="check-list">
+            <li>GMO Free*</li>
+            <li>Vegan Friendly*</li>
+            <li>Gluten Free*</li>
+            <li>Cruelty Free*</li>
+          </ul>
+
+          <a class="cta green-cta"
+             href="https://mussilipo.blogspot.com/2026/08/cha-de-emagrecimento.html"
+             target="_blank"
+             rel="noopener">
+            QUERO CONHECER / ADQUIRIR
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="container">
+      <h2 class="section-title">Como adquirir?</h2>
+      <p class="section-subtitle">
+        O processo é simples.
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="number">1</div>
+          <h3>Veja os detalhes</h3>
+          <p>Abra a página oficial para consultar as informações disponíveis sobre o produto.</p>
+        </div>
+
+        <div class="step">
+          <div class="number">2</div>
+          <h3>Faça o pedido</h3>
+          <p>Siga as instruções apresentadas na página para solicitar a sua encomenda.</p>
+        </div>
+
+        <div class="step">
+          <div class="number">3</div>
+          <h3>Receba orientações</h3>
+          <p>Confirme os detalhes da encomenda e combine a entrega conforme as condições disponíveis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="container">
+      <h2>Pronto para conhecer o Slim Tea? 🌿</h2>
+      <p>
+        Clique no botão abaixo para abrir a página oficial com as informações
+        e orientações para adquirir o produto.
+      </p>
+
+      <a class="cta"
+         href="https://mussilipo.blogspot.com/2026/08/cha-de-emagrecimento.html"
+         target="_blank"
+         rel="noopener">
+        🛒 ADQUIRIR AGORA
+      </a>
+
+      <div class="notice">
+        * As características “organic”, “vegan”, “gluten free”, “GMO free” e
+        “cruelty free” são apresentadas na imagem/embalagem fornecida.
+        Não são feitas nesta página garantias de perda de peso ou resultados específicos.
+        Consulte a embalagem e as orientações do fornecedor antes de utilizar o produto.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Mussilipo Investimento — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
