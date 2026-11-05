@@ -1,23 +1,1038 @@
-CORREÇÃO IMPORTANTE:
 
-Não quero utilizar a Hotmart neste website.
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-O objetivo principal é levar todos os visitantes diretamente para o meu grupo do WhatsApp, onde terão acesso às informações e orientações para participar no curso gratuito de Marketing Digital.
+<title>Curso Gratuito de Marketing Digital | Mussilipo Investimento</title>
 
-Substitua todos os links da Hotmart pelos seguintes:
+<meta name="description" content="Aprenda Marketing Digital gratuitamente com a Mussilipo Investimento. Estratégias de vendas online, redes sociais, Facebook Ads e captação de clientes.">
 
-https://chat.whatsapp.com/GLwuflcA9fRCex6XV7MWo4
+<meta name="theme-color" content="#050817">
 
-Todos os botões principais devem apresentar:
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-🚀 ENTRAR NO CURSO GRATUITO
+:root {
+  --black: #050817;
+  --blue: #006bff;
+  --cyan: #00cfff;
+  --gold: #ffc400;
+  --white: #ffffff;
+  --muted: #b9c7df;
+  --card: #0b1530;
+}
 
-Os botões secundários devem apresentar:
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-💬 ENTRAR NO GRUPO WHATSAPP
+html {
+  scroll-behavior: smooth;
+}
 
-Ambos devem encaminhar diretamente para o mesmo grupo.
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--black);
+  color: white;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
 
-O curso é 100% GRATUITO. Não apresentar preços, pagamentos ou checkout.
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-Manter todo o design, cores, animações e identidade visual já definidos. Não reconstruir o website. Apenas corrigir os destinos dos botões e os textos necessários.
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  width: 90%;
+  max-width: 1180px;
+  margin: auto;
+}
+
+/* BACKGROUND */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 15%, #005eff25, transparent 35%),
+    radial-gradient(circle at 90% 45%, #00cfff15, transparent 35%),
+    radial-gradient(circle at 50% 100%, #003caa20, transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(3, 8, 23, .94);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid #ffffff15;
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #dbe5f7;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 16px 25px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ffe36b, #ffc400, #e89b00);
+  color: #080b16;
+  font-weight: 900;
+  font-size: 14px;
+  box-shadow: 0 5px 25px #ffc40035;
+  transition: .3s;
+  border: 1px solid #ffe77b;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 35px #ffc40065;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--cyan);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: #006bff25;
+}
+
+/* HERO */
+
+.hero {
+  padding: 85px 0 90px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--gold);
+  background: #ffc40012;
+  border: 1px solid #ffc40065;
+  border-radius: 30px;
+  padding: 9px 17px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 5.5vw, 69px);
+  line-height: 1.05;
+  font-weight: 900;
+  margin-bottom: 22px;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+  text-shadow: 0 0 30px #ffc40035;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 17px;
+  max-width: 570px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-bottom: 30px;
+}
+
+.free-note {
+  color: #74f5b0;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 610px;
+  object-fit: contain;
+  border-radius: 22px;
+  filter: drop-shadow(0 15px 40px #006bff35);
+}
+
+.image-placeholder {
+  display: none;
+  min-height: 350px;
+  border: 1px dashed #00cfff80;
+  border-radius: 22px;
+  padding: 30px;
+  text-align: center;
+  color: var(--muted);
+  background: #07152e;
+}
+
+/* FREE STRIP */
+
+.free-strip {
+  padding: 24px 0;
+  background: linear-gradient(90deg, #a76b00, #ffd54b, #a76b00);
+  color: #080b16;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 85px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-title .mini {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.section-title h2 {
+  font-size: clamp(28px, 4vw, 43px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.section-title p {
+  max-width: 650px;
+  margin: auto;
+  color: var(--muted);
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: linear-gradient(145deg, #101e3a, #080f23);
+  border: 1px solid #ffffff13;
+  padding: 28px;
+  border-radius: 18px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: var(--cyan);
+  box-shadow: 0 10px 35px #006bff20;
+}
+
+.card-icon {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--gold);
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.about-text h2 span {
+  color: var(--gold);
+}
+
+.about-text p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.benefit {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin: 18px 0;
+  color: #e5efff;
+  font-size: 15px;
+}
+
+.check {
+  color: #61f4aa;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.about-box {
+  background: linear-gradient(145deg, #09285c, #071329);
+  border: 1px solid #00cfff45;
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.about-box .big {
+  font-size: 75px;
+}
+
+.about-box h3 {
+  color: var(--gold);
+  font-size: 27px;
+  margin: 10px 0;
+}
+
+/* AUDIENCE */
+
+.audience {
+  background: #071027;
+}
+
+.audience .cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* CTA */
+
+.cta {
+  background:
+    radial-gradient(circle at 50% 50%, #004caa65, transparent 70%),
+    #060d20;
+  border-top: 1px solid #00cfff30;
+  border-bottom: 1px solid #00cfff30;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.cta h2 span {
+  color: var(--gold);
+}
+
+.cta p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: 0 auto 28px;
+}
+
+.cta .btn {
+  font-size: 16px;
+  padding: 19px 35px;
+}
+
+/* FAQ */
+
+.faq-list {
+  max-width: 800px;
+  margin: auto;
+}
+
+details {
+  background: var(--card);
+  border: 1px solid #ffffff15;
+  border-radius: 12px;
+  margin-bottom: 13px;
+  padding: 19px 22px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
+
+details p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #030711;
+  padding: 45px 0 25px;
+  border-top: 1px solid #ffffff15;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-content p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: #d0ddf2;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #ffffff12;
+  padding-top: 22px;
+  color: #8592a9;
+  font-size: 12px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 999;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #20c86a;
+  color: white;
+  font-size: 29px;
+  box-shadow: 0 5px 25px #20c86a55;
+  transition: .3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* MOBILE */
+
+@media(max-width: 850px) {
+  .hero-grid, .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 55px 0;
+  }
+
+  .hero-image {
+    max-width: 560px;
+    margin: auto;
+  }
+
+  .cards, .audience .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    background: #050817;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #ffffff20;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media(max-width: 550px) {
+  .cards, .audience .cards {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .free-strip {
+    font-size: 14px;
+    padding: 18px 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- CONFIGURAÇÃO PRINCIPAL -->
+<script>
+const GROUP_LINK = "https://chat.whatsapp.com/GLwuflcA9fRCex6XV7MWo4";
+</script>
+
+<header>
+  <div class="container navbar">
+
+    <a href="#inicio" class="logo">
+      M<span>USSILIPO</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#inicio">Início</a>
+      <a href="#curso">O Curso</a>
+      <a href="#conteudo">Aprendizagem</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#faq">Dúvidas</a>
+      <a href="#inscricao" class="btn">ENTRAR GRÁTIS</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="tag">✦ FORMAÇÃO 100% GRATUITA</div>
+
+      <h1>
+        MARKETING<br>
+        DIGITAL<br>
+        <span>NA PRÁTICA.</span>
+      </h1>
+
+      <p>
+        Aprenda estratégias de vendas online, gestão de redes sociais,
+        Facebook Ads e captação de clientes.
+        Desenvolva competências digitais e descubra novas oportunidades.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#inscricao" class="btn">
+          🚀 QUERO APRENDER GRÁTIS
+        </a>
+
+        <a href="#conteudo" class="btn btn-outline">
+          CONHECER O CURSO
+        </a>
+      </div>
+
+      <div class="free-note">
+        ✓ Acesso gratuito à formação
+        <br>
+        ✓ Aprenda ao seu ritmo
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="imagens/curso-marketing-mussilipo.png"
+        alt="Formação gratuita de Marketing Digital Mussilipo"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+      >
+
+      <div class="image-placeholder">
+        <div style="font-size:65px">🌐</div>
+        <h3 style="color:#ffc400">MUSSILIPO INVESTIMENTO</h3>
+        <p>Adiciona a imagem do teu cartaz na pasta imagens do GitHub com o nome curso-marketing-mussilipo.png</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="free-strip">
+  ✨ 100% GRATUITO &nbsp; | &nbsp; APRENDA AO SEU RITMO &nbsp; | &nbsp; 🚀
+</div>
+
+<!-- CURSO -->
+<section id="curso">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="mini">MUSSILIPO INVESTIMENTO</div>
+      <h2>Transforme conhecimento <span style="color:#ffc400">em oportunidades!</span></h2>
+      <p>
+        O mundo digital oferece oportunidades para quem procura
+        aprender, desenvolver competências e aplicar conhecimento.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <h2>
+          O teu próximo passo começa com <span>conhecimento.</span>
+        </h2>
+
+        <p>
+          A formação de Marketing Digital da Mussilipo Investimento
+          foi pensada para ajudar-te a compreender ferramentas,
+          estratégias e técnicas utilizadas no ambiente digital.
+        </p>
+
+        <p>
+          Não precisas de ser especialista para começar.
+          O importante é ter vontade de aprender e colocar os conhecimentos em prática.
+        </p>
+
+        <div class="benefit"><span class="check">✓</span> Formação gratuita</div>
+        <div class="benefit"><span class="check">✓</span> Conteúdo organizado</div>
+        <div class="benefit"><span class="check">✓</span> Conhecimentos práticos</div>
+        <div class="benefit"><span class="check">✓</span> Comunidade de aprendizagem</div>
+      </div>
+
+      <div class="about-box">
+        <div class="big">🎓</div>
+        <h3>100% GRATUITO</h3>
+        <p>
+          Invista no seu conhecimento.
+          Não precisa pagar para participar nesta formação.
+        </p>
+        <br>
+        <a href="#inscricao" class="btn">QUERO PARTICIPAR</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section id="conteudo">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="mini">O QUE VAIS APRENDER</div>
+      <h2>Desenvolva competências digitais</h2>
+      <p>
+        Conheça algumas das principais áreas abordadas na formação.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Estratégias de vendas online</h3>
+        <p>Compreenda estratégias para divulgar produtos e serviços no ambiente digital.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📱</div>
+        <h3>Gestão de redes sociais</h3>
+        <p>Aprenda a organizar conteúdos e desenvolver uma presença profissional nas redes sociais.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📢</div>
+        <h3>Facebook Ads</h3>
+        <p>Conheça os fundamentos da publicidade e da criação de campanhas digitais.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">👥</div>
+        <h3>Captação de clientes</h3>
+        <p>Descubra estratégias para atrair pessoas interessadas nos produtos e serviços.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📈</div>
+        <h3>Crescimento digital</h3>
+        <p>Aprenda a compreender resultados e melhorar as suas estratégias de comunicação.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💼</div>
+        <h3>Negócios online</h3>
+        <p>Conheça ferramentas e possibilidades para desenvolver projetos no mundo digital.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios" style="background:#071027">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="mini">POR QUE PARTICIPAR?</div>
+      <h2>O conhecimento é o primeiro investimento.</h2>
+      <p>
+        Comece a desenvolver competências que podem ser úteis
+        na sua vida profissional e nos seus projetos.
+      </p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-icon">💡</div>
+        <h3>Aprendizagem</h3>
+        <p>Descubra conceitos e ferramentas do marketing digital.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🌍</div>
+        <h3>Oportunidades</h3>
+        <p>Conheça possibilidades de aplicação das competências digitais.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🤝</div>
+        <h3>Comunidade</h3>
+        <p>Faça parte de um espaço de partilha e aprendizagem.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <div class="mini">ESTA FORMAÇÃO É PARA TI?</div>
+      <h2>Todos podem dar o primeiro passo.</h2>
+      <p>Se tens vontade de aprender, esta oportunidade pode ser um bom começo.</p>
+    </div>
+
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-icon">🌱</div>
+        <h3>Iniciantes</h3>
+        <p>Para quem deseja conhecer o marketing digital desde o início.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🛍️</div>
+        <h3>Empreendedores</h3>
+        <p>Para quem deseja divulgar melhor os seus produtos e serviços.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">💻</div>
+        <h3>Vendedores online</h3>
+        <p>Para quem procura desenvolver conhecimentos de divulgação e vendas.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSCRIÇÃO -->
+<section class="cta" id="inscricao">
+  <div class="container">
+
+    <div class="tag">🎓 VAGAS PARA APRENDER</div>
+
+    <h2>
+      O teu futuro digital<br>
+      começa <span>com conhecimento!</span>
+    </h2>
+
+    <p>
+      Não deixes para amanhã a oportunidade de aprender.
+      Entra no nosso grupo oficial e recebe as informações
+      necessárias para participar gratuitamente na formação.
+    </p>
+
+    <a href="https://chat.whatsapp.com/GLwuflcA9fRCex6XV7MWo4"
+       class="btn"
+       target="_blank"
+       rel="noopener noreferrer">
+      🚀 ENTRAR NO CURSO GRATUITO
+    </a>
+
+    <p style="font-size:12px;margin-top:20px">
+      Sem pagamento. Sem checkout. Acesso através do grupo WhatsApp.
+    </p>
+
+  </div>
+</section>
+
+<!-- COMUNIDADE -->
+<section>
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div class="about-text">
+        <div class="tag">COMUNIDADE MUSSILIPO</div>
+
+        <h2>Aprenda junto com uma <span>comunidade!</span></h2>
+
+        <p>
+          Faça parte do nosso grupo oficial no WhatsApp.
+          Receba informações sobre a formação, orientações
+          e novidades relacionadas ao marketing digital.
+        </p>
+
+        <a href="https://chat.whatsapp.com/GLwuflcA9fRCex6XV7MWo4"
+           class="btn"
+           target="_blank"
+           rel="noopener noreferrer">
+          💬 ENTRAR NO GRUPO
+        </a>
+      </div>
+
+      <div class="about-box">
+        <div class="big">🌐</div>
+        <h3>VAMOS CRESCER JUNTOS!</h3>
+        <p>Conhecimento, partilha e desenvolvimento de competências digitais.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:#071027">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="mini">DÚVIDAS FREQUENTES</div>
+      <h2>Perguntas e respostas</h2>
+      <p>Encontre respostas antes de entrar na formação.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <details>
+        <summary>O curso é realmente gratuito?</summary>
+        <p>Sim. A formação é apresentada como gratuita e não exige pagamento para participar.</p>
+      </details>
+
+      <details>
+        <summary>Como posso participar?</summary>
+        <p>Clica num dos botões de inscrição e entra diretamente no grupo oficial do WhatsApp para receber as informações.</p>
+      </details>
+
+      <details>
+        <summary>Preciso ter experiência?</summary>
+        <p>Não precisas de ser especialista. A formação destina-se também a pessoas que estão a começar.</p>
+      </details>
+
+      <details>
+        <summary>Posso acompanhar pelo telemóvel?</summary>
+        <p>Sim. O website e os conteúdos apresentados foram pensados para funcionar em dispositivos móveis.</p>
+      </details>
+
+      <details>
+        <summary>O que vou aprender?</summary>
+        <p>Vais conhecer estratégias de marketing digital, redes sociais, publicidade online, captação de clientes e vendas.</p>
+      </details>
+
+      <details>
+        <summary>Como recebo as informações?</summary>
+        <p>As informações sobre a formação serão partilhadas através do grupo oficial do WhatsApp.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <div class="footer-content">
+
+      <div>
+        <div class="logo">MUSSILIPO <span>INVESTIMENTO</span></div>
+        <p>Vá além da moda, crie sua identidade!</p>
+        <p>Conhecimento que gera resultados!</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#inicio">Início</a>
+        <a href="#curso">O Curso</a>
+        <a href="#conteudo">Aprendizagem</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="https://chat.whatsapp.com/GLwuflcA9fRCex6XV7MWo4" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Mussilipo Investimento. Todos os direitos reservados.
+    </div>
+
+  </div>
+</footer>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://chat.whatsapp.com/GLwuflcA9fRCex6XV7MWo4"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Entrar no grupo WhatsApp">
+  ☎
+</a>
+
+<script>
+// MENU MOBILE
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
+// TODOS OS BOTÕES COM A CLASSE JOIN-GROUP PODEM USAR
+// O LINK CENTRALIZADO GROUP_LINK.
+document.querySelectorAll(".join-group").forEach(button => {
+  button.href = GROUP_LINK;
+});
+</script>
+
+</body>
+</html>
