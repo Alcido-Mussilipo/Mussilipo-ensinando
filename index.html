@@ -937,7 +937,7 @@ footer strong {color:white}
 
 <!-- PAINEL DO ADMINISTRADOR -->
 <section class="dashboard" id="adminDashboard">
-  <h1>Olá, Alcido! 👑</h1>
+  <h1>Olá, ADM Alcido! 👑</h1>
   <p style="color:var(--muted)">
     Bem-vindo ao painel de administração da Mussilipo Academy.
   </p>
@@ -5537,6 +5537,179 @@ window.printAdminReport = function() {
   const w = window.open('', '_blank');
   if (!w) return alert('Permite janelas pop-up para imprimir o relatório.');
   w.document.write(`<!doctype html><html lang="pt"><head><meta charset="utf-8"><title>${escapeHTML(window.adminReportTitle)}</title><style>body{font-family:Arial,sans-serif;padding:24px;color:#222}h2{margin-bottom:6px}table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #bbb;padding:7px;text-align:left}th{background:#eee}p{color:#555}@media print{body{padding:0}}</style></head><body><h2>${escapeHTML(window.adminReportTitle)}</h2><p>Gerado em ${new Date().toLocaleString('pt-MZ')} · ${window.adminReportRows.length} registo(s)</p>${box.querySelector('table')?.outerHTML || ''}
+
+
+<style id="admin-dropdown-layout-final">
+/* Painel administrativo alinhado com o painel do aluno: verde, branco e dropdown. */
+#adminDashboard.dashboard{
+  position:relative!important;
+  box-sizing:border-box!important;
+  background:#f3f7f4!important;
+  color:#1b2b21!important;
+  padding:34px clamp(14px,4vw,54px) 55px!important;
+  min-height:100vh;
+}
+#adminDashboard::before{content:none!important;display:none!important}
+#adminDashboard>h1{
+  color:#173c28!important;
+  font-size:clamp(25px,4vw,36px)!important;
+  line-height:1.2!important;
+  margin:0 170px 7px 0!important;
+  padding:0!important;
+}
+#adminDashboard>p{
+  color:#718477!important;
+  margin:0 0 22px!important;
+  max-width:720px;
+  line-height:1.55;
+}
+#adminDashboard .admin-layout{
+  display:block!important;
+  position:relative!important;
+  width:100%!important;
+  margin:18px 0 0!important;
+  padding:0!important;
+}
+#adminDashboard .admin-sidebar{
+  position:absolute!important;
+  z-index:50!important;
+  top:-96px!important;
+  right:0!important;
+  width:auto!important;
+  max-width:calc(100vw - 28px)!important;
+  padding:0!important;
+  margin:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:12px!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+#adminDashboard .admin-sidebar-toggle{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:9px!important;
+  min-height:44px!important;
+  padding:11px 17px!important;
+  border:1px solid #16834a!important;
+  border-radius:11px!important;
+  background:#16834a!important;
+  color:#fff!important;
+  font-size:14px!important;
+  font-weight:800!important;
+  cursor:pointer!important;
+  box-shadow:0 4px 12px rgba(22,131,74,.16)!important;
+  white-space:nowrap!important;
+}
+#adminDashboard .admin-sidebar-toggle:hover{background:#116b3c!important}
+#adminDashboard .admin-sidebar h3{display:none!important}
+#adminDashboard #adminSidebarNav{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:4px!important;
+  position:absolute!important;
+  top:calc(100% + 9px)!important;
+  right:0!important;
+  width:min(330px,calc(100vw - 28px))!important;
+  max-height:min(70vh,560px)!important;
+  overflow-y:auto!important;
+  padding:10px!important;
+  background:#fff!important;
+  border:1px solid #dce9df!important;
+  border-radius:15px!important;
+  box-shadow:0 12px 34px rgba(26,74,43,.15)!important;
+}
+#adminDashboard .admin-sidebar.collapsed #adminSidebarNav{display:none!important}
+#adminDashboard .admin-menu-button{
+  display:flex!important;
+  align-items:center!important;
+  width:100%!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+  padding:11px 12px!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:9px!important;
+  background:transparent!important;
+  color:#52665a!important;
+  text-align:left!important;
+  font-size:14px!important;
+  font-weight:600!important;
+  line-height:1.35!important;
+  white-space:normal!important;
+}
+#adminDashboard .admin-menu-button:hover,
+#adminDashboard .admin-menu-button.active{
+  background:#e7f5eb!important;
+  color:#147a40!important;
+}
+#adminDashboard .admin-menu-button.active{box-shadow:inset 3px 0 0 #16834a!important}
+#adminDashboard .admin-workspace{width:100%!important;min-width:0!important}
+#adminDashboard .admin-workspace-toolbar{display:none!important}
+#adminDashboard .admin-page{width:100%;min-width:0}
+#adminDashboard .admin-page.active{display:block!important}
+#adminDashboard .dash-card,
+#adminDashboard .admin-stat-card,
+#adminDashboard .admin-page .card,
+#adminDashboard .admin-page [class*="summary-card"]{
+  background:#fff!important;
+  color:#24372a!important;
+  border:1px solid #dce9df!important;
+  border-radius:15px!important;
+  box-shadow:0 5px 20px rgba(26,74,43,.045)!important;
+}
+#adminDashboard .admin-stat-card{padding:16px!important;min-width:0!important}
+#adminDashboard .admin-stat-card .stat-label{color:#718477!important}
+#adminDashboard .admin-stat-card .stat-value{color:#16834a!important}
+#adminDashboard .admin-page h2,
+#adminDashboard .admin-page h3,
+#adminDashboard .admin-page h4{color:#203d2a}
+#adminDashboard .admin-page p,
+#adminDashboard .admin-page label{color:#52665a}
+#adminDashboard .admin-page input,
+#adminDashboard .admin-page select,
+#adminDashboard .admin-page textarea{
+  background:#f8fbf8!important;
+  color:#24372a!important;
+  border:1px solid #d5e3d8!important;
+  border-radius:9px!important;
+  max-width:100%;
+}
+#adminDashboard .admin-page input:focus,
+#adminDashboard .admin-page select:focus,
+#adminDashboard .admin-page textarea:focus{outline:2px solid rgba(22,131,74,.16)!important;border-color:#16834a!important}
+#adminDashboard .admin-page table{width:100%;border-collapse:collapse;color:#2a3b30}
+#adminDashboard .admin-page th{background:#f1f7f2!important;color:#45634e!important}
+#adminDashboard .admin-page th,
+#adminDashboard .admin-page td{border-bottom:1px solid #e3ece5!important}
+#adminDashboard .admin-page tbody tr:hover{background:#f8fbf8}
+#adminDashboard .admin-page .btn,
+#adminDashboard .admin-page button.btn{
+  background:#16834a!important;color:#fff!important;border-color:#16834a!important;
+}
+#adminDashboard .admin-page .btn-outline{background:#fff!important;color:#16834a!important;border:1px solid #16834a!important}
+#adminDashboard .admin-page a:not(.btn){color:#16834a}
+#adminDashboard .admin-sidebar-toggle:focus-visible,
+#adminDashboard .admin-menu-button:focus-visible,
+#adminDashboard .admin-page button:focus-visible{outline:3px solid rgba(22,131,74,.25)!important;outline-offset:2px}
+@media(max-width:700px){
+  #adminDashboard.dashboard{padding:24px 13px 40px!important}
+  #adminDashboard>h1{font-size:clamp(23px,6vw,30px)!important;margin-right:145px!important;padding-right:0!important;max-width:calc(100% - 2px)}
+  #adminDashboard>p{padding-right:0!important;margin-bottom:18px!important}
+  #adminDashboard .admin-sidebar{top:-130px!important;right:0!important}
+  #adminDashboard .admin-sidebar-toggle{min-height:40px!important;padding:9px 12px!important;font-size:13px!important}
+  #adminDashboard .admin-layout{margin-top:62px!important}
+  #adminDashboard .admin-page th,
+  #adminDashboard .admin-page td{padding:8px!important;font-size:12px!important}
+  #adminDashboard .admin-stat-card .stat-value{font-size:21px!important}
+}
+@media(min-width:701px){
+  #adminDashboard .admin-sidebar{top:-91px!important}
+  #adminDashboard .admin-layout{margin-top:20px!important}
+}
+</style>
+
 </body></html>`);
   w.document.close(); w.focus(); w.print();
 };
@@ -5630,15 +5803,11 @@ await window.verifyCertificateFromUrl();
       sidebar.classList.toggle('collapsed',value);
       toggle.setAttribute('aria-expanded',String(!value));
     }
-    setCollapsed(window.matchMedia('(max-width: 900px)').matches);
+    /* O menu começa fechado em computador e telemóvel. */
+    setCollapsed(true);
     toggle.addEventListener('click',function(){setCollapsed(!sidebar.classList.contains('collapsed'));});
     nav.querySelectorAll('.admin-menu-button').forEach(function(button){
-      button.addEventListener('click',function(){
-        if(window.matchMedia('(max-width: 900px)').matches) setCollapsed(true);
-      });
-    });
-    window.addEventListener('resize',function(){
-      if(!window.matchMedia('(max-width: 900px)').matches) setCollapsed(false);
+      button.addEventListener('click',function(){setCollapsed(true);});
     });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initAdminSidebar);
